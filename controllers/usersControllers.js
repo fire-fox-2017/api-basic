@@ -2,13 +2,13 @@ var db = require('../models');
 module.exports = {
   getall: (req, res, next) => {
     db.User.findAll().then(ArrResult => {
-      res.send(ArrResult);
+      res.json(ArrResult);
     })
   },
   getone: (req, res, next) => {
     let id = req.params.id;
     db.User.findById(id).then(Result => {
-      res.send(Result);
+      res.json(Result);
     })
   },
   create: (req, res, next) => {
@@ -21,9 +21,21 @@ module.exports = {
       age: age,
       email: email
     }).then(Result => {
-      res.send(Result);
+      res.json(Result);
     }).catch(err => {
       res.send(err);
+    })
+  },
+  delete: (req, res, next) => {
+    let id = req.params.id;
+    db.User.destroy({
+      where: {
+        id: id
+      }
+    }).then(Result => {
+      res.json(Result);
+    }).catch(err => {
+      res.json(err);
     })
   }
 }
