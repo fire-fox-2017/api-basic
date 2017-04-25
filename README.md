@@ -5,6 +5,8 @@ Demo app with baic REST API
 
 REST API
 List of basic routes:
+
+
 | Routes | HTTP | Description |
 | --------------- | ------------- | --------------------------- |
 | /api/users      | GET           | Get a single user           |
@@ -12,6 +14,7 @@ List of basic routes:
 | /api/users      | POST          | Cretae a user               |
 | /api/users/:id  | DElETE        | Delete a user               |
 | /api/users/:id  | PUT           | Update a user with new info |
+
 
 Usage
 with only npm:
