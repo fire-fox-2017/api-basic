@@ -6,5 +6,6 @@ router.get('/', controllers.getall);
 router.get('/:id', controllers.getone);
 router.post('/', controllers.create);
 router.delete('/:id', controllers.delete);
+router.put('/:id', controllers.update);
 
 module.exports = router;

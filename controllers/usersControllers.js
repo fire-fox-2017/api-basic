@@ -37,5 +37,24 @@ module.exports = {
     }).catch(err => {
       res.json(err);
     })
+  },
+  update: (req, res, next) => {
+    let id = req.params.id;
+    let name = req.body.name;
+    let age = req.body.age;
+    let email = req.body.email;
+    db.User.update({
+      name: name,
+      age: age,
+      email: email
+    }, {
+      where: {
+        id: id
+      }
+    }).then(Result => {
+      res.json(Result);
+    }).catch(err => {
+      res.json(err);
+    })
   }
 }
