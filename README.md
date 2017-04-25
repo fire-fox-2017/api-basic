@@ -5,8 +5,8 @@ Demo app with baic REST API
 
 REST API
 List of basic routes:
-| Routes          | HTTP          | Description                 |
-| --------------- |:-------------:| ---------------------------:|
+| Routes | HTTP | Description |
+| --------------- | ------------- | --------------------------- |
 | /api/users      | GET           | Get a single user           |
 | /api/users/:id  | GET           | Get  single user            |
 | /api/users      | POST          | Cretae a user               |
