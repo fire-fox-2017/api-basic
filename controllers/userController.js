@@ -31,7 +31,7 @@ let deleteUser= function(req,res){
 let updateUser= function(req,res){
   let n = req.body.name
   let a = req.body.age
-  db.User.findOne({id: req.params.id})
+  db.User.findOne({where:{id: req.params.id}})
   .then((user)=>{
     user.updateAttributes({
       name: n,
