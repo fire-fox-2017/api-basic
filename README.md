@@ -1,8 +1,12 @@
 # api-basic
 
 Author : Haryana wisnu
+
 Create Date : Selasa, 25 April 2017
 
+Description : API Basic dengan CRUT
+
+Acces via localhost:3000/api/users
 
 Install Step :
 - create folder api-basic
@@ -15,6 +19,7 @@ Install Step :
 - sequelize db:migrate
 - sequelize seed:craete --name seed-users-dummy
 - sequelize db:seed --seed seed-users-dummy
+
 
 | Route | HTTP |Description|
 | ------ | ------ |------ |
