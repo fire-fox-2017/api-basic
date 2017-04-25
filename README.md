@@ -16,9 +16,10 @@ Install Step :
 - sequelize seed:craete --name seed-users-dummy
 - sequelize db:seed --seed seed-users-dummy
 
-Route               HTTP        Description
-/api/users          GET         get all the users
-/api/users/:id      GET         get a single users
-/api/users          POST        create a user
-/api/users/:id      DELETE      delete a user
-/api/users/:id      PUT         update a user with new info
+| Route | HTTP |Description|
+| ------ | ------ |------ |
+|/api/users       |   GET   |      get all the users|
+|/api/users/:id   |   GET      |   get a single users|
+|/api/users       |   POST     |   create a user|
+|/api/users/:id   |   DELETE    |  delete a user|
+|/api/users/:id   |   PUT        | update a user with new info|
