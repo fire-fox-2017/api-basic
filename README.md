@@ -9,15 +9,9 @@ Description : API Basic dengan CRUT
 Acces via localhost:3000/api/users
 
 Install Step :
-- create folder api-basic
-- npm init
-- express .
 - npm install
-- npm install --save sequelize sequelize-cli pg
 - sequelize init
-- sequelize model:craete --name Users --attribute name:string,age:integer,email:string
 - sequelize db:migrate
-- sequelize seed:craete --name seed-users-dummy
 - sequelize db:seed --seed seed-users-dummy
 
 
