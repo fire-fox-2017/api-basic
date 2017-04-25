@@ -1,5 +1,7 @@
 # api-basic
 
+Api-basic merupakan aplikasi sederhana untuk menyimpan data user menggunakan metode API
+
 Author : M Ilham Hidayat
 
 #List of basic routes:
@@ -29,7 +31,7 @@ http: put
 1. Install Package in dependency
 
 	npm install
-	
+
 2. Initialize sequelize
 
 	sequelize init
