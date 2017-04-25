@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('api-basic:server');
+var debug = require('debug')('api-auth:server');
 var http = require('http');
 
 /**

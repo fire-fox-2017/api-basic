@@ -1,33 +1,24 @@
-# api-basic
+# API-BASIC
 
-## Users CRUD
+API-Basic is a simple example of CRUD using the API.
 
-Implementation of CRUD using all the basic methods
+## Routes
 
-## REST API
-
-Routes           Method      Description
-/api/users        GET      get all users
-/api/users/:id    GET      get a single user
-/api/users        POST     create a user
-/api/users/:id   DELETE    delete a user
-/api/users/:id    PUT      update all data of a user
-/api/users/:id   PATCH     update specific data of a user
-
-###Filters
-
-Routes                             Method      Description
-/api/users?name="<username>"        GET       get <username> match in users       
-/api/users?name="<na>"              GET       get <na> like in users
+| Route | HTTP method | Description|
+| ---------- | ------------------- | ---------- |
+| /api/users | GET | Get all the users info |
+| /api/users/:id | GET | Get a single user info |
+| /api/users/ | POST | Create a user |
+| /api/users/:id | DELETE | Delete a user |
+| /api/users/:id | PUT | Update a user with new info |
 
 
-## Usage
+Create user requires {username:'<username>', password:'<password>', role:<'admin' or 'user'>}
 
-How to start:
-- npm install
-- npm start
-- npm run dev?
-
-Access the website via http://localhost:3000 or
-API via http://localhost:3000/api 
-
+## How to Use:
+Install the dependencies first and then start the app as follows:
+```sh
+$ npm install
+$ npm start
+```
+Access the website via HTTP://localhost:3000, running the app in Postman is recommended
