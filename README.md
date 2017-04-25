@@ -1,4 +1,4 @@
-# CRUD "USER" BASIC (username, password)
+# CRUD "USER" BASIC ( username, password )
 
 ROUTE | HTTP | Description
 ------|------| -----------
