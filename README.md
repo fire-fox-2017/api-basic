@@ -11,5 +11,7 @@ My Phone Contact App
 /api/users/:id|PUT|Update a user with new info
 
 To Use
+```javascript
 npm install
 npm start
+```
