@@ -40,19 +40,6 @@ methods.getById = (req, res, next) => {
         })
 }
 
-methods.getById = (req, res, next) => {
-    db.User.findById(req.params.id)
-        .then(record => {
-            res.json(record)
-        })
-        .catch(err => {
-            res.json({
-                err,
-                message: 'Error waktu getById'
-            })
-        })
-}
-
 methods.updateById = (req, res, next) => {
     db.User.update(req.body, {
             where: {
